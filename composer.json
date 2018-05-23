@@ -1,0 +1,25 @@
+{
+    "name": "encone/logs",
+    "description": "logs",
+    "license": "mit",
+    "authors": [
+        {
+            "name": "yangpei",
+            "email": "49089901@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Encone\\Logs\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Encone\\Logs\\LogsServiceProvider"
+            ]
+        }
+    }
+}
