@@ -13,9 +13,13 @@ class LogsServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        $this->publishes([
+            __DIR__.'/../database/migrations' => database_path('migrations')
+        ]);
+
         $this->loadRoutesFrom(__DIR__.'/Routes/routes.php');
 
-        $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
+//        $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
 
     }
 
